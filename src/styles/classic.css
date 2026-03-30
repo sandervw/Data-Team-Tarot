@@ -1,0 +1,184 @@
+/*============================================
+  CLASSIC LAYOUT
+  - Traditional 3-column layout with navbar, sidebar(s), and main content
+  - Follows the Laws of Sparse
+  ============================================*/
+
+/*============================================
+  UTILS: Utility classes for common styles
+  - Use for spacing, typography, colors, etc.
+  ============================================*/
+.title {
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--small);
+}
+.meta {
+  color: var(--color-gray);
+  font-size: var(--medium);
+}
+
+/*============================================
+  NAVBAR: A component that always spans the top of the page
+  - Use for website title, nav links, searchbar, notifications, etc.
+  ============================================*/
+.navbar {
+  padding: var(--small) var(--large);
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-title {
+  font-weight: var(--weight-bold);
+  font-size: var(--xlarge);
+  color: var(--color-accent);
+  /* cursor: pointer; */
+}
+
+/*============================================
+  SIDEBAR: A component that spans the side of the page
+  - Use for navigation links, user profile, filters, etc.
+  ============================================*/
+.sidebar {
+  padding-bottom: var(--large);
+}
+
+/*============================================
+  PAGE: A component that represents the main content area
+  - Articles, main writing area, feed, pictures, etc.
+  ============================================*/
+.page {
+  flex: 1;
+  padding: var(--large);
+}
+.page-text p {
+  margin-bottom: var(--medium);
+  line-height: var(--line-height-loose);
+}
+.page-text h1,
+.page-text h2,
+.page-text h3 {
+  margin-top: var(--large);
+  margin-bottom: var(--medium);
+}
+.page-text h1:first-child,
+.page-text h2:first-child,
+.page-text h3:first-child {
+  margin-top: 0;
+}
+.page-text hr {
+  border: none;
+  border-top: var(--border-width) solid var(--color-gray);
+  margin-top: var(--large);
+  margin-bottom: var(--large);
+}
+.page-text code {
+  font-family: monospace;
+  font-size: var(--medium);
+}
+.page-text table {
+  width: var(--percent-100);
+  border-collapse: collapse;
+  margin-bottom: var(--medium);
+}
+.page-text th,
+.page-text td {
+  border: var(--border-width) solid var(--color-gray);
+  padding: var(--small) var(--medium);
+  text-align: left;
+  vertical-align: top;
+  font-weight: var(--weight-normal);
+}
+.page-text blockquote {
+  border-left: var(--xsmall);
+  padding-left: var(--medium);
+  margin-top: var(--medium);
+  margin-bottom: var(--medium);
+}
+
+/*============================================
+  MARKDOWN IMAGE STYLES
+  ============================================*/
+.page-text img {
+  max-width: var(--percent-100);
+  height: auto;
+}
+
+/*============================================
+  FOOTER: A component that spans the bottom of the page
+  - Use for copyright, links, etc.
+  ============================================*/
+.footer {
+  padding: var(--large);
+  text-align: center;
+}
+
+/*============================================
+  DRAWER: Slide-out navigation panel for mobile
+  ============================================*/
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: var(--percent-100);
+  width: var(--percent-75);
+  background-color: var(--color-bg-primary);
+  z-index: var(--z-modal);
+  transform: translateX(calc(-1 * var(--percent-100)));
+  transition: var(--transition-fast);
+  overflow-y: auto;
+  padding: var(--large);
+}
+.drawer.revealed {
+  transform: translateX(0);
+}
+.hamburger {
+  display: none;
+}
+
+/*============================================
+  RESPONSIVE: Tablet and below
+  - Breakpoint value: var(--breakpoint-tablet) = 67.5rem
+  ============================================*/
+@media (max-width: 67.5rem) {
+  .display-grid-3-column > .sidebar {
+    display: none;
+  }
+
+  .display-grid-3-column {
+    grid-template-columns: 1fr;
+  }
+
+  .width-75 {
+    width: var(--percent-100);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .page {
+    padding: var(--small);
+  }
+}
+
+/*============================================
+  PRINT
+  ============================================*/
+
+@media print {
+  .navbar,
+  .sidebar {
+    display: none;
+  }
+
+  .display-grid-3-column {
+    display: block;
+  }
+
+  .width-75 {
+    width: var(--percent-100);
+  }
+
+  .container {
+    border: none;
+  }
+}
