@@ -19,26 +19,26 @@ A weekend project built with Astro SSG on Azure Static Web Apps. One tarot card 
 4. Seed the `src/content/cards/` directory with 22 markdown files for the Major Arcana. Rename them to fit the data team theme. Examples:
    - 0 — The Intern
    - I — The Architect
-   - II — The Product Owner
-   - III — The Sprint
-   - IV — The Schema
-   - V — The Stakeholder
-   - VI — The Merge Conflict
-   - VII — The Deploy
-   - VIII — The Rollback
-   - IX — The Hermit (someone working from home with camera off)
+   - II — The Data Steward
+   - III — The End User
+   - IV — The Stakeholder
+   - V — The Domain Expert
+   - VI — The Cross-Team Dependency
+   - VII — The Sprint
+   - VIII — CI/CD
+   - IX — The Remote Dev
    - X — The Wheel of Jira
    - XI — The SLA
    - XII — The Hanged Build
-   - XIII — The Migration
-   - XIV — The Data Quality Check
+   - XIII — Schema Changes
+   - XIV — Data Quality
    - XV — The Vendor
    - XVI — The Outage
-   - XVII — The Dashboard
+   - XVII — The Executive Dashboard
    - XVIII — The Legacy System
-   - XIX — The Green Build
-   - XX — The Code Review
-   - XXI — The Release
+   - XIX — The Sprint Demo
+   - XX — Code Review
+   - XXI — The Go-Live
 5. Seed `src/content/fortunes/` with 30–40 markdown files, one fortune per file. Keep them short and punchy. Mix categories. Examples:
    - "Your PR will be approved without comments. Savor this omen."
    - "A stakeholder approaches with 'just a quick question.'"
