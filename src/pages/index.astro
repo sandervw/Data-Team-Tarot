@@ -1,13 +1,14 @@
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Data Team Tarot</title>
-	</head>
-	<body>
-		<h1>Data Team Tarot</h1>
-	</body>
-</html>
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <a href="/">Home</a>
+  <a href="/archive/">Archive</a>
+  <div class="tarot-card">
+    <p class="tarot-numeral">XIII</p>
+    <h2 class="tarot-name">Schema Changes</h2>
+  </div>
+
+  <p class="fortune">"The data you seek is in a CSV. The CSV is in an email. The email is from 2019."</p>
+</BaseLayout>

@@ -13,10 +13,8 @@
 
 `No Exceptions.` */
 
-/* Poppins and Baskervville */
-/* @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Poppins:wght@300;500;700&family=VT323&display=swap"); */
-/* iA Writer Quattro */
-@import url("https://fonts.cdnfonts.com/css/ia-writer-quattro-s");
+/* Cinzel (tarot headings) + Crimson Text (body/fortune text) */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap");
 
 /*============================================
   RESET
@@ -24,7 +22,7 @@
 *,
 *::before,
 *::after {
-  font-family: "ia-writer-quattro-s", arial, sans-serif;
+  font-family: "Crimson Text", serif;
   color: var(--color-text-primary);
   text-decoration: none;
   user-select: none;
@@ -41,13 +39,13 @@ body,
   ============================================*/
 :root {
   /* Color palette */
-  --color-white: #faf9f5;
-  --color-black: #262624;
-  --color-gray: #7b7b7b;
-  --color-copper: #b87333;
-  --color-red: #c41e3a;
+  --color-white: #e8e4df;
+  --color-black: #0e0b16;
+  --color-gray: #5c5470;
+  --color-green: #2d6e4f;
+  --color-red: #8b2252;
   /* Color Usage */
-  --color-accent: var(--color-copper);
+  --color-accent: var(--color-green);
   --color-placeholder: var(--color-gray);
   --color-danger: var(--color-red);
   --color-text-primary: var(--color-white);
@@ -94,6 +92,7 @@ body,
 [data-theme="light"] {
   --color-text-primary: var(--color-black);
   --color-bg-primary: var(--color-white);
+  --color-accent: var(--color-green);
 }
 
 /*============================================

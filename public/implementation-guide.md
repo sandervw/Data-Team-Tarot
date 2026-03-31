@@ -11,12 +11,11 @@ A weekend project built with Astro SSG on Azure Static Web Apps. One tarot card 
 
 ### Steps
 
-1. Scaffold a new Astro project (`npm create astro@latest`). Pick the minimal/blank template.
-2. Create a single base layout in `src/layouts/BaseLayout.astro` with a dark, moody theme (think card-table green or deep purple — this is tarot, not a dashboard).
-3. Define two content collections in `src/content/config.ts`:
+
+1. Define two content collections:
    - `cards` — schema: `name` (string), `numeral` (string, e.g. "XIII"), `meaning` (short one-liner), `art` (image path or placeholder), `suit` (optional, for Minor Arcana expansion later).
    - `fortunes` — schema: `text` (string), `category` (enum: `standup`, `sprint`, `retro`, `friday`, `general`).
-4. Seed the `src/content/cards/` directory with 22 markdown files for the Major Arcana. Rename them to fit the data team theme. Examples:
+2. Seed the `src/content/cards/` directory with 22 markdown files for the Major Arcana. Rename them to fit the data team theme. Examples:
    - 0 — The Intern
    - I — The Architect
    - II — The Data Steward
@@ -39,7 +38,7 @@ A weekend project built with Astro SSG on Azure Static Web Apps. One tarot card 
    - XIX — The Sprint Demo
    - XX — Code Review
    - XXI — The Go-Live
-5. Seed `src/content/fortunes/` with 30–40 markdown files, one fortune per file. Keep them short and punchy. Mix categories. Examples:
+3. Seed `src/content/fortunes/` with 30–40 markdown files, one fortune per file. Keep them short and punchy. Mix categories. Examples:
    - "Your PR will be approved without comments. Savor this omen."
    - "A stakeholder approaches with 'just a quick question.'"
    - "The data you seek is in a CSV. The CSV is in an email. The email is from 2019."
@@ -50,9 +49,9 @@ A weekend project built with Astro SSG on Azure Static Web Apps. One tarot card 
    - "Mercury is in retrograde. So is your staging environment."
    - "You will receive a compliment on your DAX. Accept it graciously."
    - "Beware the 4pm Friday deploy."
-6. Build a `Card.astro` component that renders a single card: numeral, name, meaning, art placeholder, and a fortune text slot.
-7. Create a `/deck` page that loops over all cards and renders them in a grid. This is your "browse the full deck" view.
-8. Verify the build works: `npm run dev`, confirm `/deck` renders all 22 cards.
+4. Build a `Card.astro` component that renders a single card: numeral, name, meaning, art placeholder, and a fortune text slot.
+5. Create a `/deck` page that loops over all cards and renders them in a grid. This is your "browse the full deck" view.
+6. Verify the build works: `npm run dev`, confirm `/deck` renders all 22 cards.
 
 **Checkpoint:** You can browse all cards and fortunes. No daily logic yet — just content on screen.
 

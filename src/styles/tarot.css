@@ -1,0 +1,129 @@
+/*============================================
+  TAROT LAYOUT
+  - Centered single-focus layout for daily card draw
+  - Dark, moody atmosphere -- card table at midnight
+  - Follows the Laws of Sparse
+  ============================================*/
+
+/*============================================
+  TAROT UTILS
+  ============================================*/
+.title {
+  font-family: "Cinzel", serif;
+  font-weight: var(--weight-bold);
+  color: var(--color-accent);
+}
+.subtitle {
+  color: var(--color-gray);
+  font-size: var(--medium);
+}
+.divider {
+  border: none;
+  border-top: var(--border-width) solid var(--color-gray);
+  margin-top: var(--large);
+  margin-bottom: var(--large);
+}
+
+/*============================================
+  SITE HEADER
+  ============================================*/
+.site-header {
+  padding: var(--large);
+  text-align: center;
+}
+.site-title {
+  font-family: "Cinzel", serif;
+  font-size: var(--xlarge);
+  font-weight: var(--weight-bold);
+  color: var(--color-accent);
+}
+
+/*============================================
+  STAGE: The main content area -- single centered column
+  ============================================*/
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--large);
+  min-height: var(--percent-75);
+}
+
+/*============================================
+  TAROT CARD
+  ============================================*/
+.tarot-card {
+  border: var(--border-width) solid var(--color-accent);
+  border-radius: var(--medium);
+  padding: var(--large);
+  text-align: center;
+  max-width: var(--percent-75);
+}
+.tarot-numeral {
+  font-family: "Cinzel", serif;
+  font-size: var(--xlarge);
+  color: var(--color-accent);
+}
+.tarot-name {
+  font-family: "Cinzel", serif;
+  font-size: var(--large);
+  margin-top: var(--small);
+  margin-bottom: var(--medium);
+}
+.tarot-meaning {
+  font-style: italic;
+  color: var(--color-gray);
+  margin-bottom: var(--medium);
+}
+
+/*============================================
+  FORTUNE: The daily fortune text
+  ============================================*/
+.fortune {
+  font-style: italic;
+  font-size: var(--large);
+  text-align: center;
+  padding: var(--large);
+  max-width: var(--percent-75);
+}
+
+/*============================================
+  DECK GRID: Browse-all-cards view
+  ============================================*/
+.deck-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--medium);
+  padding: var(--large);
+}
+
+/*============================================
+  SITE FOOTER
+  ============================================*/
+.site-footer {
+  padding: var(--large);
+  text-align: center;
+  color: var(--color-gray);
+  font-size: var(--small);
+}
+
+/*============================================
+  RESPONSIVE: Stack on smaller screens
+  ============================================*/
+@media (max-width: 67.5rem) {
+  .deck-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tarot-card {
+    max-width: var(--percent-100);
+  }
+
+  .fortune {
+    max-width: var(--percent-100);
+  }
+
+  .stage {
+    padding: var(--medium);
+  }
+}
