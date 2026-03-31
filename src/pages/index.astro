@@ -1,14 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import { getCollection } from 'astro:content';
+
+const allCards = await getCollection('cards');
+const featured = allCards.find((card) => card.id === "schema-changes");
 ---
 
 <BaseLayout>
-  <a href="/">Home</a>
-  <a href="/archive/">Archive</a>
-  <div class="tarot-card">
-    <p class="tarot-numeral">XIII</p>
-    <h2 class="tarot-name">Schema Changes</h2>
-  </div>
+  <h1 class="title">Today's Draw</h1>
+
+  {featured && <Card card={featured.data} />}
 
   <p class="fortune">"The data you seek is in a CSV. The CSV is in an email. The email is from 2019."</p>
 </BaseLayout>

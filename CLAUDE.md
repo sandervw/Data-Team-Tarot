@@ -8,6 +8,10 @@ Data Team Tarot -- a daily standup fortune predictor built with Astro 6 (SSG). O
 
 The implementation plan lives at `public/implementation-guide.md`. It defines 5 phases: static foundation, daily draw engine, card art, fortune submission, and polish features. The project is in early Phase 1.
 
+## Astro Docs
+
+Before writing or editing any `.astro` files, Astro config, or Astro-related code, always fetch the latest Astro 6 docs via Context7 MCP (`resolve-library-id` then `query-docs`). Astro 6 has breaking changes from earlier versions -- do not rely on training data alone.
+
 ## Commands
 
 - `npm run dev` -- start dev server

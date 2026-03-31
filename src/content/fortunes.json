@@ -1,0 +1,177 @@
+[
+  {
+    "id": "fortune-001",
+    "text": "Your PR will be approved without comments. Savor this omen.",
+    "card": "code-review"
+  },
+  {
+    "id": "fortune-002",
+    "text": "A stakeholder approaches with 'just a quick question.'",
+    "card": "the-stakeholder"
+  },
+  {
+    "id": "fortune-003",
+    "text": "The data you seek is in a CSV. The CSV is in an email. The email is from 2019.",
+    "card": "the-legacy-system"
+  },
+  {
+    "id": "fortune-004",
+    "text": "A merge conflict in your future -- but also, a merge conflict in your past.",
+    "card": "ci-cd"
+  },
+  {
+    "id": "fortune-005",
+    "text": "The sprint board reveals: you were the blocker all along.",
+    "card": "the-sprint"
+  },
+  {
+    "id": "fortune-006",
+    "text": "Today's standup will end on time. You will be suspicious.",
+    "card": "the-sprint-demo"
+  },
+  {
+    "id": "fortune-007",
+    "text": "Mercury is in retrograde. So is your staging environment.",
+    "card": "the-outage"
+  },
+  {
+    "id": "fortune-008",
+    "text": "You will receive a compliment on your DAX. Accept it graciously.",
+    "card": "the-executive-dashboard"
+  },
+  {
+    "id": "fortune-009",
+    "text": "Beware the 4pm Friday deploy.",
+    "card": "the-go-live"
+  },
+  {
+    "id": "fortune-010",
+    "text": "The pipeline will run green today. Screenshot it for proof.",
+    "card": "ci-cd"
+  },
+  {
+    "id": "fortune-011",
+    "text": "A wild LEFT JOIN appears. It is surprisingly effective.",
+    "card": "the-data-steward"
+  },
+  {
+    "id": "fortune-012",
+    "text": "Someone will say 'it works on my machine.' That someone is you.",
+    "card": "the-remote-dev"
+  },
+  {
+    "id": "fortune-013",
+    "text": "The schema migration you fear will go smoothly. The one you don't fear won't.",
+    "card": "schema-changes"
+  },
+  {
+    "id": "fortune-014",
+    "text": "A ticket marked 'low priority' in 2023 will resurface with vengeance.",
+    "card": "the-wheel-of-jira"
+  },
+  {
+    "id": "fortune-015",
+    "text": "You will discover a table with no primary key. Breathe.",
+    "card": "data-quality"
+  },
+  {
+    "id": "fortune-016",
+    "text": "The vendor's documentation is a riddle wrapped in a PDF.",
+    "card": "the-vendor"
+  },
+  {
+    "id": "fortune-017",
+    "text": "Your dashboard will load on the first try during the demo. The stars align.",
+    "card": "the-sprint-demo"
+  },
+  {
+    "id": "fortune-018",
+    "text": "An intern will ask a question that reshapes your entire data model.",
+    "card": "the-intern"
+  },
+  {
+    "id": "fortune-019",
+    "text": "Today you will write a query so elegant it brings a tear to your eye.",
+    "card": "the-architect"
+  },
+  {
+    "id": "fortune-020",
+    "text": "The SLA gods are watching. They are mostly pleased.",
+    "card": "the-sla"
+  },
+  {
+    "id": "fortune-021",
+    "text": "A stored procedure from the before-times holds the answer you seek.",
+    "card": "the-legacy-system"
+  },
+  {
+    "id": "fortune-022",
+    "text": "You will explain the difference between a fact and a dimension table. Again.",
+    "card": "the-domain-expert"
+  },
+  {
+    "id": "fortune-023",
+    "text": "The build is hanging. It is meditating. Give it space.",
+    "card": "the-hanged-build"
+  },
+  {
+    "id": "fortune-024",
+    "text": "Your end user will find the one edge case you didn't test.",
+    "card": "the-end-user"
+  },
+  {
+    "id": "fortune-025",
+    "text": "A cross-team dependency will unblock itself. Do not question this miracle.",
+    "card": "the-cross-team-dependency"
+  },
+  {
+    "id": "fortune-026",
+    "text": "Someone will paste a full stack trace into Teams with no context. Patience.",
+    "card": "the-outage"
+  },
+  {
+    "id": "fortune-027",
+    "text": "The data is not wrong. Your expectations are.",
+    "card": "data-quality"
+  },
+  {
+    "id": "fortune-028",
+    "text": "You will be asked to make a chart 'pop.' The chart cannot pop. But you will try.",
+    "card": "the-executive-dashboard"
+  },
+  {
+    "id": "fortune-029",
+    "text": "Today's Jira ticket will spawn three child tickets. The wheel turns.",
+    "card": "the-wheel-of-jira"
+  },
+  {
+    "id": "fortune-030",
+    "text": "A null where you expected a value. A value where you expected a null. Balance.",
+    "card": "schema-changes"
+  },
+  {
+    "id": "fortune-031",
+    "text": "The VPN will hold steady through your entire demo. A rare blessing.",
+    "card": "the-remote-dev"
+  },
+  {
+    "id": "fortune-032",
+    "text": "You will find a comment in the code that simply reads 'TODO: fix this.' It is from you.",
+    "card": "the-architect"
+  },
+  {
+    "id": "fortune-033",
+    "text": "The stakeholder will change requirements mid-sprint. The cards foresaw this.",
+    "card": "the-stakeholder"
+  },
+  {
+    "id": "fortune-034",
+    "text": "A production incident will resolve itself before you finish writing the postmortem.",
+    "card": "the-outage"
+  },
+  {
+    "id": "fortune-035",
+    "text": "Your carefully indexed table will be queried with SELECT *. Let it go.",
+    "card": "the-data-steward"
+  }
+]

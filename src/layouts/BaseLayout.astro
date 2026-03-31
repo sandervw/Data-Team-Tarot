@@ -1,6 +1,8 @@
 ---
+import Nav from "../components/Nav.astro";
+
 interface Props {
-  title?: string;
+  readonly title?: string;
 }
 
 const { title = "Data Team Tarot" } = Astro.props;
@@ -16,6 +18,7 @@ const { title = "Data Team Tarot" } = Astro.props;
   <body>
     <header class="site-header">
       <a href="/" class="site-title">Data Team Tarot</a>
+      <Nav />
     </header>
 
     <main class="stage">

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "the-intern",
+    "name": "The Intern",
+    "numeral": "0",
+    "number": 0,
+    "art": "the-intern.png"
+  },
+  {
+    "id": "the-architect",
+    "name": "The Architect",
+    "numeral": "I",
+    "number": 1,
+    "art": "the-architect.png"
+  },
+  {
+    "id": "the-data-steward",
+    "name": "The Data Steward",
+    "numeral": "II",
+    "number": 2,
+    "art": "the-data-steward.png"
+  },
+  {
+    "id": "the-end-user",
+    "name": "The End User",
+    "numeral": "III",
+    "number": 3,
+    "art": "the-end-user.png"
+  },
+  {
+    "id": "the-stakeholder",
+    "name": "The Stakeholder",
+    "numeral": "IV",
+    "number": 4,
+    "art": "the-stakeholder.png"
+  },
+  {
+    "id": "the-domain-expert",
+    "name": "The Domain Expert",
+    "numeral": "V",
+    "number": 5,
+    "art": "the-domain-expert.png"
+  },
+  {
+    "id": "the-cross-team-dependency",
+    "name": "The Cross-Team Dependency",
+    "numeral": "VI",
+    "number": 6,
+    "art": "the-cross-team-dependency.png"
+  },
+  {
+    "id": "the-sprint",
+    "name": "The Sprint",
+    "numeral": "VII",
+    "number": 7,
+    "art": "the-sprint.png"
+  },
+  {
+    "id": "ci-cd",
+    "name": "CI/CD",
+    "numeral": "VIII",
+    "number": 8,
+    "art": "ci-cd.png"
+  },
+  {
+    "id": "the-remote-dev",
+    "name": "The Remote Dev",
+    "numeral": "IX",
+    "number": 9,
+    "art": "the-remote-dev.png"
+  },
+  {
+    "id": "the-wheel-of-jira",
+    "name": "The Wheel of Jira",
+    "numeral": "X",
+    "number": 10,
+    "art": "the-wheel-of-jira.png"
+  },
+  {
+    "id": "the-sla",
+    "name": "The SLA",
+    "numeral": "XI",
+    "number": 11,
+    "art": "the-sla.png"
+  },
+  {
+    "id": "the-hanged-build",
+    "name": "The Hanged Build",
+    "numeral": "XII",
+    "number": 12,
+    "art": "the-hanged-build.png"
+  },
+  {
+    "id": "schema-changes",
+    "name": "Schema Changes",
+    "numeral": "XIII",
+    "number": 13,
+    "art": "schema-changes.png"
+  },
+  {
+    "id": "data-quality",
+    "name": "Data Quality",
+    "numeral": "XIV",
+    "number": 14,
+    "art": "data-quality.png"
+  },
+  {
+    "id": "the-vendor",
+    "name": "The Vendor",
+    "numeral": "XV",
+    "number": 15,
+    "art": "the-vendor.png"
+  },
+  {
+    "id": "the-outage",
+    "name": "The Outage",
+    "numeral": "XVI",
+    "number": 16,
+    "art": "the-outage.png"
+  },
+  {
+    "id": "the-executive-dashboard",
+    "name": "The Executive Dashboard",
+    "numeral": "XVII",
+    "number": 17,
+    "art": "the-executive-dashboard.png"
+  },
+  {
+    "id": "the-legacy-system",
+    "name": "The Legacy System",
+    "numeral": "XVIII",
+    "number": 18,
+    "art": "the-legacy-system.png"
+  },
+  {
+    "id": "the-sprint-demo",
+    "name": "The Sprint Demo",
+    "numeral": "XIX",
+    "number": 19,
+    "art": "the-sprint-demo.png"
+  },
+  {
+    "id": "code-review",
+    "name": "Code Review",
+    "numeral": "XX",
+    "number": 20,
+    "art": "code-review.png"
+  },
+  {
+    "id": "the-go-live",
+    "name": "The Go-Live",
+    "numeral": "XXI",
+    "number": 21,
+    "art": "the-go-live.png"
+  }
+]
