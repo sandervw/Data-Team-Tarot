@@ -117,7 +117,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--medium);
-  width: var(--percent-100);
+  width: var(--percent-75);
   padding-top: var(--large);
 }
 
