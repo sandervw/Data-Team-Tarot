@@ -4,19 +4,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Data Team Tarot -- a daily standup fortune predictor built with Astro 6 (SSG). One tarot card drawn per day (deterministic, same for everyone), with a data-team-themed Major Arcana deck. Intended for Azure Static Web Apps deployment.
+Data Team Tarot - a daily standup fortune predictor built with Astro 6 (SSG). One tarot card drawn per day (deterministic, same for everyone), with a data-team-themed Major Arcana deck. Intended for Azure Static Web Apps deployment.
 
 The implementation plan lives at `public/implementation-guide.md`. It defines 5 phases: static foundation, daily draw engine, card art, fortune submission, and polish features. The project is in early Phase 1.
 
 ## Astro Docs
 
-Before writing or editing any `.astro` files, Astro config, or Astro-related code, always fetch the latest Astro 6 docs via Context7 MCP (`resolve-library-id` then `query-docs`). Astro 6 has breaking changes from earlier versions -- do not rely on training data alone.
+Before writing or editing any `.astro` files, Astro config, or Astro-related code, always fetch the latest Astro 6 docs via Context7 MCP (`resolve-library-id` then `query-docs`). Astro 6 has breaking changes from earlier versions - do not rely on training data alone.
 
 ## Commands
 
-- `npm run dev` -- start dev server
-- `npm run build` -- production build
-- `npm run preview` -- preview production build
+- `npm run dev` - start dev server
+- `npm run build` - production build
+- `npm run preview` - preview production build
 
 No test runner or linter is configured yet.
 
@@ -26,7 +26,7 @@ This project follows a custom constraint system called "Sparse", defined in `pub
 
 ### CSS (`public/standards/Sparse.css.md`)
 - Max 5 of any CSS variable type
-- No hardcoded numeric values -- only CSS variables
+- No hardcoded numeric values - only CSS variables
 - No ems, only rems
 - Max 3 distinct types per class
 - Only 4 percentages: 25%, 50%, 75%, 100%
@@ -52,12 +52,12 @@ This project follows a custom constraint system called "Sparse", defined in `pub
 
 ## Architecture
 
-- **Astro 6 SSG** -- no SSR, fully static site generation
-- `src/pages/index.astro` -- homepage (will become daily draw page)
-- `src/layouts/BaseLayout.astro` -- base HTML shell
-- `src/content/Cards.md` -- card list for the 22 Major Arcana (data-team themed)
-- `src/styles/sparse.css` -- core utility-first CSS framework following Sparse rules
-- `src/styles/classic.css` -- layout layer (navbar, sidebar, page, footer, drawer) on top of sparse.css
-- `public/standards/` -- Sparse coding standard definitions (CSS, TS, React)
+- **Astro 6 SSG** - no SSR, fully static site generation
+- `src/pages/index.astro` - homepage (will become daily draw page)
+- `src/layouts/BaseLayout.astro` - base HTML shell
+- `src/content/Cards.md` - card list for the 22 Major Arcana (data-team themed)
+- `src/styles/sparse.css` - core utility-first CSS framework following Sparse rules
+- `src/styles/classic.css` - layout layer (navbar, sidebar, page, footer, drawer) on top of sparse.css
+- `public/standards/` - Sparse coding standard definitions (CSS, TS, React)
 
 Dark theme by default: off-white text (`#faf9f5`) on near-black background (`#262624`) with copper accent (`#b87333`).
