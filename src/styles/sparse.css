@@ -31,7 +31,7 @@
 html,
 body,
 #root {
-  height: var(--percent-100);
+  max-height: var(--percent-100);
 }
 
 /*============================================
