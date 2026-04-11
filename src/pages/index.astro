@@ -1,16 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
+import DailyDraw from "../components/DailyDraw.astro";
 
-const allCards = await getCollection('cards');
-const featured = allCards.find((card) => card.id === "schema-changes");
+const fortuneEntries = await getCollection("fortunes");
+const cardEntries = await getCollection("cards");
+const fortunes = fortuneEntries.map((entry) => entry.data);
+const cards = cardEntries.map((entry) => entry.data);
 ---
 
 <BaseLayout>
   <h1 class="title">Today's Draw</h1>
-
-  {featured && <Card card={featured.data} />}
-
-  <p class="fortune">"The data you seek is in a CSV. The CSV is in an email. The email is from 2019."</p>
+  <DailyDraw fortunes={fortunes} cards={cards} />
 </BaseLayout>

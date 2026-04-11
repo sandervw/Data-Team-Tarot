@@ -1,0 +1,33 @@
+---
+import Card from "./Card.astro";
+import { getDailyDraw } from "../utils/dailyDraw";
+
+interface TarotCard {
+  readonly name: string;
+  readonly numeral: string;
+  readonly art: string;
+}
+
+interface Fortune {
+  readonly text: string;
+}
+
+interface Props {
+  readonly cards: readonly TarotCard[];
+  readonly fortunes: readonly Fortune[];
+}
+
+const { cards, fortunes } = Astro.props;
+const { cardIndex, fortuneIndex } = getDailyDraw(
+  cards.length,
+  fortunes.length,
+  new Date(),
+);
+const card = cards[cardIndex];
+const fortune = fortunes[fortuneIndex];
+---
+
+<div class="daily-draw">
+  <Card card={card} />
+  <p class="fortune">{fortune.text}</p>
+</div>
