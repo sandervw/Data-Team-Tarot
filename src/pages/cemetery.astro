@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import DailyDraw from "../components/DailyDraw.astro";
+import PriorDraws from "../components/PriorDraws.astro";
 
 const fortuneEntries = await getCollection("fortunes");
 const cardEntries = await getCollection("cards");
@@ -9,7 +9,7 @@ const fortunes = fortuneEntries.map((entry) => entry.data);
 const cards = cardEntries.map((entry) => ({ ...entry.data, id: entry.id }));
 ---
 
-<BaseLayout title="Daily Draw - Standup Fortunes">
-  <h1 class="title">Today's Draw</h1>
-  <DailyDraw fortunes={fortunes} cards={cards} />
+<BaseLayout title="Cemetery of Fortunes Past - Standup Fortunes">
+  <h1 class="title">Cemetery of Fortunes Past</h1>
+  <PriorDraws fortunes={fortunes} cards={cards} />
 </BaseLayout>

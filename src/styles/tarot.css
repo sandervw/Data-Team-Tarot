@@ -56,8 +56,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--large);
-  min-height: var(--percent-75);
 }
 
 /*============================================
@@ -67,6 +65,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
   border: var(--border-width) solid var(--color-accent);
   border-radius: var(--medium);
   padding: var(--medium);
@@ -83,8 +82,11 @@
   margin-top: var(--small);
 }
 .tarot-art {
-  width: var(--percent-100);
-  height: auto;
+  /* set max height to 50% of the viewport height */
+  max-height: 50vh;
+  max-width: var(--percent-100);
+  width: auto;
+  height: var(--percent-100);
   border-radius: var(--medium);
   margin-top: var(--small);
 }
@@ -92,7 +94,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--percent-100);
+  height: var(--percent-100);
   border: var(--border-width) solid var(--color-gray);
   border-radius: var(--medium);
   padding: var(--xlarge);
@@ -107,7 +109,6 @@
   font-size: var(--large);
   text-align: center;
   padding: var(--large);
-  max-width: var(--percent-75);
 }
 
 /*============================================
@@ -119,16 +120,6 @@
   gap: var(--medium);
   width: var(--percent-75);
   padding-top: var(--large);
-}
-
-/*============================================
-  SITE FOOTER
-  ============================================*/
-.site-footer {
-  padding: var(--large);
-  text-align: center;
-  color: var(--color-gray);
-  font-size: var(--small);
 }
 
 /*============================================

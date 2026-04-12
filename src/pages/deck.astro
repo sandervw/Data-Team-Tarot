@@ -1,19 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
-const allCards = await getCollection('cards');
+const allCards = await getCollection("cards");
 const sorted = allCards.toSorted((a, b) => a.data.number - b.data.number);
 ---
 
-<BaseLayout title="Card Deck - Data Team Tarot">
-  <h1 class="title">The Major Arcana</h1>
+<BaseLayout title="Card Deck - Standup Fortunes">
+  <h1 class="title">The Major Schemata</h1>
   <p class="subtitle">22 cards. Infinite excuses.</p>
 
   <div class="deck-grid">
-    {sorted.map((card) => (
-      <Card card={card.data} />
-    ))}
+    {sorted.map((card) => <Card card={card.data} />)}
   </div>
 </BaseLayout>

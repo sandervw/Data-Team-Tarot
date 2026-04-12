@@ -1,8 +1,9 @@
 ---
 import Card from "./Card.astro";
-import { getDailyDraw } from "../utils/dailyDraw";
+import { getDailyDraw, getAdjustedDate } from "../utils/dailyDraw";
 
 interface TarotCard {
+  readonly id: string;
   readonly name: string;
   readonly numeral: string;
   readonly art: string;
@@ -10,6 +11,7 @@ interface TarotCard {
 
 interface Fortune {
   readonly text: string;
+  readonly card?: string;
 }
 
 interface Props {
@@ -18,16 +20,15 @@ interface Props {
 }
 
 const { cards, fortunes } = Astro.props;
-const { cardIndex, fortuneIndex } = getDailyDraw(
-  cards.length,
-  fortunes.length,
-  new Date(),
-);
-const card = cards[cardIndex];
+const { fortuneIndex } = getDailyDraw(fortunes.length, new Date());
 const fortune = fortunes[fortuneIndex];
+const cardIndex = fortune.card
+  ? cards.findIndex((c) => c.id === fortune.card)
+  : Math.floor(Math.random() * cards.length);
+
+const card = cards[cardIndex];
 ---
 
-<div class="daily-draw">
-  <Card card={card} />
-  <p class="fortune">{fortune.text}</p>
-</div>
+<h2 class="subtitle">{getAdjustedDate(new Date()).toDateString()}</h2>
+<Card card={card} />
+<p class="fortune">{fortune.text}</p>

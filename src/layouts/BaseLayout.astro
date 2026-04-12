@@ -5,22 +5,20 @@ interface Props {
   readonly title?: string;
 }
 
-const { title = "Data Team Tarot" } = Astro.props;
+const { title = "Standup Fortunes" } = Astro.props;
 ---
 
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="site-title">Data Team Tarot</a>
+      <a href="/" class="site-title">Daily Standup Fortunes</a>
       <Nav />
     </header>
-
     <main class="stage">
       <slot />
     </main>
