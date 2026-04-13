@@ -43,15 +43,6 @@ This approach uses Azure Static Web Apps' built-in API support (a Node.js functi
 
 **Tradeoff:** Most Astro-native. Natural moderation buffer. Slight delay before fortunes go live.
 
-#### Path B — Azure Blob Storage (Fastest Dynamic Option)
-
-1. Create an Azure Function that appends submissions to a `fortunes.json` blob in Azure Blob Storage.
-2. On the frontend, the daily draw script fetches this blob at load time and merges it with the static fortunes collection before selecting.
-3. No rebuild needed for new fortunes to appear.
-4. Moderation is trickier — you'd need a separate admin view or periodic manual review of the blob.
-
-**Tradeoff:** Fortunes appear immediately. Less moderation control. Slightly more Azure plumbing.
-
 #### Path C — Google Form (Zero-Code Fallback)
 
 1. Create a Google Form with two fields: fortune text and category.

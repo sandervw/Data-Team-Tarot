@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import PriorDraws from "../components/PriorDraws.astro";
+import { PriorDraws } from "../components/PriorDraws";
 
 const fortuneEntries = await getCollection("fortunes");
 const cardEntries = await getCollection("cards");
@@ -11,5 +11,5 @@ const cards = cardEntries.map((entry) => ({ ...entry.data, id: entry.id }));
 
 <BaseLayout title="Cemetery of Fortunes Past - Standup Fortunes">
   <h1 class="title">Cemetery of Fortunes Past</h1>
-  <PriorDraws fortunes={fortunes} cards={cards} />
+  <PriorDraws fortunes={fortunes} cards={cards} client:only="react" />
 </BaseLayout>

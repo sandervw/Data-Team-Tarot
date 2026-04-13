@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Card from "../components/Card.astro";
+import { Card } from "../components/Card";
 import { getCollection } from "astro:content";
 
 const allCards = await getCollection("cards");
@@ -12,6 +12,6 @@ const sorted = allCards.toSorted((a, b) => a.data.number - b.data.number);
   <p class="subtitle">22 cards. Infinite excuses.</p>
 
   <div class="deck-grid">
-    {sorted.map((card) => <Card card={card.data} />)}
+    {sorted.map((card) => <Card card={card.data} client:only="react" />)}
   </div>
 </BaseLayout>
