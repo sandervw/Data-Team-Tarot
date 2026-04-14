@@ -5,8 +5,6 @@
 ## Overview
 
 TODO
-- see implementation-guide.
-- This is a project for learning astro
 
 ## Commands
 

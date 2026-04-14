@@ -4,9 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Data Team Tarot - a daily standup fortune predictor built with Astro 6 (SSG). One tarot card drawn per day (deterministic, same for everyone), with a data-team-themed Major Arcana deck. Intended for Azure Static Web Apps deployment.
-
-The implementation plan lives at `public/implementation-guide.md`. It defines 5 phases: static foundation, daily draw engine, card art, fortune submission, and polish features. The project is in early Phase 1.
+Data Team Tarot - a daily standup fortune predictor built with Astro 6 (SSG). One tarot card drawn per day (deterministic, same for everyone), with a data-team-themed Major Arcana deck. It is deployed to Cloudflare Pages (https://cheddarsoap.com/).
 
 ## Astro Docs
 

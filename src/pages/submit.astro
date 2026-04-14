@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { SubmissionForm } from "../components/SubmissionForm";
+
+const cardEntries = await getCollection("cards");
+const cards = cardEntries
+  .map((entry) => ({ slug: entry.id, name: entry.data.name, numeral: entry.data.numeral, number: entry.data.number }))
+  .sort((a, b) => a.number - b.number)
+  .map(({ slug, name, numeral }) => ({ slug, name, numeral }));
+---
+
+<BaseLayout title="Submit a Fortune">
+  <h1 class="title">Submit a Fortune</h1>
+  <SubmissionForm cards={cards} client:only="react" />
+</BaseLayout>
