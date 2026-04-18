@@ -173,5 +173,10 @@
     "id": "fortune-035",
     "text": "Your carefully indexed table will be queried with SELECT *. Let it go.",
     "card": "the-data-steward"
+  },
+  {
+    "id": "fortune-036",
+    "text": "Your support ticket will be answered by a bot that has never felt pain.",
+    "card": "the-vendor"
   }
 ]
