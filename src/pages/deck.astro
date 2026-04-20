@@ -9,8 +9,6 @@ const sorted = allCards.toSorted((a, b) => a.data.number - b.data.number);
 
 <BaseLayout title="Card Deck - Standup Fortunes">
   <h1 class="title">The Major Schemata</h1>
-  <p class="subtitle">22 cards. Infinite excuses.</p>
-
   <div class="deck-grid">
     {sorted.map((card) => <Card card={card.data} client:only="react" />)}
   </div>

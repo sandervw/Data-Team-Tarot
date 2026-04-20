@@ -41,15 +41,15 @@ body,
   /* Color palette */
   --color-white: #e8e4df;
   --color-black: #0e0b16;
-  --color-gray: #5c5470;
-  --color-green: #2d6e4f;
-  --color-red: #8b2252;
+  --color-gray: #766f89;
+  --color-green: #005e80;
+  --color-red: #ed5337;
   /* Color Usage */
   --color-accent: var(--color-green);
   --color-placeholder: var(--color-gray);
   --color-danger: var(--color-red);
-  --color-text-primary: var(--color-white);
-  --color-bg-primary: var(--color-black);
+  --color-text-primary: var(--color-black);
+  --color-bg-primary: var(--color-white);
   background-color: var(--color-bg-primary);
   /* Sizes */
   --xsmall: 0.25rem;
@@ -417,7 +417,7 @@ svg:hover {
   background-color: transparent;
   cursor: pointer;
   transition: var(--transition-fast);
-  font-size: var(--medium);
+  font-size: var(--large);
 }
 .btn-color {
   border-color: var(--color-accent);

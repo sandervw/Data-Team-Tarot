@@ -55,28 +55,24 @@ const SubmissionForm = ({ cards }: SubmissionFormProps): React.JSX.Element => {
   };
 
   return (
-    <div className="display-flex-column gap-medium">
+    <>
       <textarea
-        className="input input-stretch"
+        className="input width-75"
         value={text}
         maxLength={MAX_LEN}
-        placeholder="Write your fortune..."
+        placeholder="Write your fortune here..."
         onChange={(e) => setText(e.target.value)}
       />
+      <h2 className="subtitle">Choose a Card:</h2>
       <div className="deck-grid">
         {cards.map((c) => (
-          // <button
-          //   key={c.id}
-          //   type="button"
-          //   className={selectedCard === c.id ? "btn btn-color" : "btn"}
-          //   onClick={() => setSelectedCard(c.id)}
-          // >
           <Card
             card={{ name: c.name, numeral: c.numeral, art: c.art }}
             onClick={() => setSelectedCard(c.id)}
-            className="tarot-card-button"
+            className={
+              selectedCard === c.id ? "tarot-button-selected" : "tarot-button"
+            }
           />
-          // </button>
         ))}
       </div>
       <button
@@ -85,10 +81,10 @@ const SubmissionForm = ({ cards }: SubmissionFormProps): React.JSX.Element => {
         disabled={!canSubmit}
         onClick={handleSubmit}
       >
-        {status === "submitting" ? "Submitting..." : "Submit Fortune"}
+        {status === "submitting" ? "Submitting..." : "Send to the Deck"}
       </button>
       {message !== "" && <p className="fortune">{message}</p>}
-    </div>
+    </>
   );
 };
 

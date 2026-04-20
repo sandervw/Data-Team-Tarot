@@ -8,6 +8,20 @@
 /*============================================
   TAROT UTILS
   ============================================*/
+input,
+button,
+textarea,
+select,
+a {
+  font-size: 1rem;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  font-size: var(--large);
+}
 .title {
   font-family: "Cinzel", serif;
   font-weight: var(--weight-bold);
@@ -15,7 +29,6 @@
 }
 .subtitle {
   color: var(--color-gray);
-  font-size: var(--medium);
 }
 .divider {
   border: none;
@@ -58,13 +71,15 @@
   align-items: center;
   max-width: var(--percent-75);
   margin: 0 auto;
+  gap: var(--medium);
 }
 
 /*============================================
   TAROT CARD
   ============================================*/
 .tarot-card,
-.tarot-card-button {
+.tarot-button,
+.tarot-button-selected {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,20 +89,34 @@
   padding: var(--medium);
   text-align: center;
 }
-.tarot-card-button {
+.tarot-button,
+.tarot-button-selected {
   cursor: pointer;
   border-color: var(--color-gray);
   transition: var(--transition-fast);
 }
+.tarot-button:hover {
+  border-color: var(--color-accent);
+}
+.tarot-button-selected {
+  border-color: var(--color-accent);
+}
+.tarot-button:hover .tarot-numeral,
+.tarot-button:hover .tarot-name,
+.tarot-button-selected .tarot-numeral,
+.tarot-button-selected .tarot-name {
+  color: var(--color-accent);
+}
 .tarot-numeral {
   font-family: "Cinzel", serif;
   font-size: var(--large);
-  color: var(--color-accent);
+  transition: var(--transition-fast);
 }
 .tarot-name {
   font-family: "Cinzel", serif;
   font-size: var(--medium);
   margin-top: var(--small);
+  transition: var(--transition-fast);
 }
 .tarot-art {
   /* set max height to 50% of the viewport height */
@@ -123,11 +152,14 @@
   DECK GRID: Browse-all-cards view
   ============================================*/
 .deck-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: var(--medium);
-  padding-top: var(--large);
+}
+.deck-grid > * {
+  flex: 0 0 calc((100% - 5 * 1rem) / 6); /* 6 per row, 5 gaps */
 }
 
 /*============================================
@@ -135,7 +167,7 @@
   ============================================*/
 @media (max-width: 67.5rem) {
   .deck-grid {
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
   }
 
   .fortune {
