@@ -178,5 +178,10 @@
     "id": "fortune-036",
     "text": "Your support ticket will be answered by a bot that has never felt pain.",
     "card": "the-vendor"
+  },
+  {
+    "id": "fortune-037",
+    "text": "The go-live checklist has one unchecked box. Nobody remembers what it was for.",
+    "card": "the-go-live"
   }
 ]
