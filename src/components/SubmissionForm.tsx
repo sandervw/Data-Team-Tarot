@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { Card } from "./Card";
 
 interface CardOption {
-  readonly slug: string;
+  readonly id: string;
   readonly name: string;
   readonly numeral: string;
+  readonly art: string;
 }
 
 interface SubmissionFormProps {
@@ -20,7 +22,8 @@ const SubmissionForm = ({ cards }: SubmissionFormProps): React.JSX.Element => {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState<string>("");
 
-  const canSubmit = text.trim().length > 0 && selectedCard !== "" && status !== "submitting";
+  const canSubmit =
+    text.trim().length > 0 && selectedCard !== "" && status !== "submitting";
 
   const handleSubmit = async (): Promise<void> => {
     setStatus("submitting");
@@ -31,7 +34,11 @@ const SubmissionForm = ({ cards }: SubmissionFormProps): React.JSX.Element => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: text.trim(), card: selectedCard }),
       });
-      const data = (await res.json()) as { readonly ok: boolean; readonly error?: string; readonly id?: string };
+      const data = (await res.json()) as {
+        readonly ok: boolean;
+        readonly error?: string;
+        readonly id?: string;
+      };
       if (!res.ok || !data.ok) {
         setStatus("error");
         setMessage(data.error ?? "Submission failed");
@@ -56,16 +63,20 @@ const SubmissionForm = ({ cards }: SubmissionFormProps): React.JSX.Element => {
         placeholder="Write your fortune..."
         onChange={(e) => setText(e.target.value)}
       />
-      <div className="display-grid display-grid-3-column">
+      <div className="deck-grid">
         {cards.map((c) => (
-          <button
-            key={c.slug}
-            type="button"
-            className={selectedCard === c.slug ? "btn btn-color" : "btn"}
-            onClick={() => setSelectedCard(c.slug)}
-          >
-            {c.numeral}. {c.name}
-          </button>
+          // <button
+          //   key={c.id}
+          //   type="button"
+          //   className={selectedCard === c.id ? "btn btn-color" : "btn"}
+          //   onClick={() => setSelectedCard(c.id)}
+          // >
+          <Card
+            card={{ name: c.name, numeral: c.numeral, art: c.art }}
+            onClick={() => setSelectedCard(c.id)}
+            className="tarot-card-button"
+          />
+          // </button>
         ))}
       </div>
       <button

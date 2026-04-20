@@ -4,20 +4,22 @@ interface CardProps {
     readonly numeral: string;
     readonly art: string;
   };
+  readonly onClick?: () => void;
+  readonly className?: string;
 }
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/cards/*.{jpeg,jpg,png,gif,webp,png}',
-  { eager: true }
+  "/src/assets/cards/*.{jpeg,jpg,png,gif,webp,png}",
+  { eager: true },
 );
 
-const Card = ({ card }: CardProps): React.JSX.Element => {
+const Card = ({ card, onClick, className }: CardProps): React.JSX.Element => {
   const artPath = `/src/assets/cards/${card.art}`;
   const resolved = images[artPath]?.default;
   const hasArt = !!resolved;
 
   return (
-    <div className="tarot-card">
+    <div className={`tarot-card ${className ?? ""}`} onClick={onClick}>
       <p className="tarot-numeral">{card.numeral}</p>
       {hasArt ? (
         <img

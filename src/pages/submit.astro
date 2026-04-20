@@ -5,9 +5,13 @@ import { SubmissionForm } from "../components/SubmissionForm";
 
 const cardEntries = await getCollection("cards");
 const cards = cardEntries
-  .map((entry) => ({ slug: entry.id, name: entry.data.name, numeral: entry.data.numeral, number: entry.data.number }))
-  .sort((a, b) => a.number - b.number)
-  .map(({ slug, name, numeral }) => ({ slug, name, numeral }));
+  .sort((a, b) => a.data.number - b.data.number)
+  .map((entry) => ({
+    id: entry.id,
+    name: entry.data.name,
+    numeral: entry.data.numeral,
+    art: entry.data.art,
+  }));
 ---
 
 <BaseLayout title="Submit a Fortune">
