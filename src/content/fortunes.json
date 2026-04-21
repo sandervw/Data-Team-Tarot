@@ -188,5 +188,10 @@
     "id": "fortune-038",
     "text": "The data is correct. The expectation is not.",
     "card": "the-executive-dashboard"
+  },
+  {
+    "id": "fortune-039",
+    "text": "If it hasn't hit the backlog, its folklore.",
+    "card": "the-vendor"
   }
 ]
