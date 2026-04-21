@@ -218,5 +218,10 @@
     "id": "fortune-044",
     "text": "The requirement is final. Pending one more change.",
     "card": "the-end-user"
+  },
+  {
+    "id": "fortune-045",
+    "text": "That's a great idea for a future sprint.",
+    "card": "the-wheel-of-jira"
   }
 ]
