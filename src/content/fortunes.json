@@ -203,5 +203,10 @@
     "id": "fortune-041",
     "text": "They want it exactly the same. But different.",
     "card": "the-vendor"
+  },
+  {
+    "id": "fortune-042",
+    "text": "The end goal was clear. To everyone except everyone.",
+    "card": "the-sprint"
   }
 ]
