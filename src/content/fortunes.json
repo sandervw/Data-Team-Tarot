@@ -178,5 +178,50 @@
     "id": "fortune-036",
     "text": "Your support ticket will be answered by a bot that has never felt pain.",
     "card": "the-vendor"
+  },
+  {
+    "id": "fortune-037",
+    "text": "The go-live checklist has one unchecked box. Nobody remembers what it was for.",
+    "card": "the-go-live"
+  },
+  {
+    "id": "fortune-038",
+    "text": "The data is correct. The expectation is not.",
+    "card": "the-executive-dashboard"
+  },
+  {
+    "id": "fortune-039",
+    "text": "If it hasn't hit the backlog, its folklore.",
+    "card": "the-vendor"
+  },
+  {
+    "id": "fortune-040",
+    "text": "Your numbers are right. Someone else's aren't.",
+    "card": "the-end-user"
+  },
+  {
+    "id": "fortune-041",
+    "text": "They want it exactly the same. But different.",
+    "card": "the-vendor"
+  },
+  {
+    "id": "fortune-042",
+    "text": "The end goal was clear. To everyone except everyone.",
+    "card": "the-sprint"
+  },
+  {
+    "id": "fortune-043",
+    "text": "We've always used this report. Why? Because our great ancestors did.d",
+    "card": "the-end-user"
+  },
+  {
+    "id": "fortune-044",
+    "text": "The requirement is final. Pending one more change.",
+    "card": "the-end-user"
+  },
+  {
+    "id": "fortune-045",
+    "text": "That's a great idea for a future sprint.",
+    "card": "the-wheel-of-jira"
   }
 ]
