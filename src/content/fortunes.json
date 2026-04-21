@@ -2,226 +2,271 @@
   {
     "id": "fortune-001",
     "text": "Your PR will be approved without comments. Savor this omen.",
-    "card": "code-review"
+    "card": "code-review",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-002",
     "text": "A stakeholder approaches with 'just a quick question.'",
-    "card": "the-stakeholder"
+    "card": "the-stakeholder",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-003",
     "text": "The data you seek is in a CSV. The CSV is in an email. The email is from 2019.",
-    "card": "the-legacy-system"
+    "card": "the-legacy-system",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-004",
     "text": "A merge conflict in your future -- but also, a merge conflict in your past.",
-    "card": "ci-cd"
+    "card": "ci-cd",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-005",
     "text": "The sprint board reveals: you were the blocker all along.",
-    "card": "the-sprint"
+    "card": "the-sprint",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-006",
     "text": "Today's standup will end on time. You will be suspicious.",
-    "card": "the-sprint-demo"
+    "card": "the-sprint-demo",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-007",
     "text": "Mercury is in retrograde. So is your staging environment.",
-    "card": "the-outage"
+    "card": "the-outage",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-008",
     "text": "You will receive a compliment on your DAX. Accept it graciously.",
-    "card": "the-executive-dashboard"
+    "card": "the-executive-dashboard",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-009",
     "text": "Beware the 4pm Friday deploy.",
-    "card": "the-go-live"
+    "card": "the-go-live",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-010",
     "text": "The pipeline will run green today. Screenshot it for proof.",
-    "card": "ci-cd"
+    "card": "ci-cd",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-011",
     "text": "A wild LEFT JOIN appears. It is surprisingly effective.",
-    "card": "the-data-steward"
+    "card": "the-data-steward",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-012",
     "text": "Someone will say 'it works on my machine.' That someone is you.",
-    "card": "the-remote-dev"
+    "card": "the-remote-dev",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-013",
     "text": "The schema migration you fear will go smoothly. The one you don't fear won't.",
-    "card": "schema-changes"
+    "card": "schema-changes",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-014",
     "text": "A ticket marked 'low priority' in 2023 will resurface with vengeance.",
-    "card": "the-wheel-of-jira"
+    "card": "the-wheel-of-jira",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-015",
     "text": "You will discover a table with no primary key. Breathe.",
-    "card": "data-quality"
+    "card": "data-quality",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-016",
     "text": "The vendor's documentation is a riddle wrapped in a PDF.",
-    "card": "the-vendor"
+    "card": "the-vendor",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-017",
     "text": "Your dashboard will load on the first try during the demo. The stars align.",
-    "card": "the-sprint-demo"
+    "card": "the-sprint-demo",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-018",
     "text": "An intern will ask a question that reshapes your entire data model.",
-    "card": "the-intern"
+    "card": "the-intern",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-019",
     "text": "Today you will write a query so elegant it brings a tear to your eye.",
-    "card": "the-architect"
+    "card": "the-architect",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-020",
     "text": "The SLA gods are watching. They are mostly pleased.",
-    "card": "the-sla"
+    "card": "the-sla",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-021",
     "text": "A stored procedure from the before-times holds the answer you seek.",
-    "card": "the-legacy-system"
+    "card": "the-legacy-system",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-022",
     "text": "You will explain the difference between a fact and a dimension table. Again.",
-    "card": "the-domain-expert"
+    "card": "the-domain-expert",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-023",
     "text": "The build is hanging. It is meditating. Give it space.",
-    "card": "the-hanged-build"
+    "card": "the-hanged-build",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-024",
     "text": "Your end user will find the one edge case you didn't test.",
-    "card": "the-end-user"
+    "card": "the-end-user",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-025",
     "text": "A cross-team dependency will unblock itself. Do not question this miracle.",
-    "card": "the-cross-team-dependency"
+    "card": "the-cross-team-dependency",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-026",
     "text": "Someone will paste a full stack trace into Teams with no context. Patience.",
-    "card": "the-outage"
+    "card": "the-outage",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-027",
     "text": "The data is not wrong. Your expectations are.",
-    "card": "data-quality"
+    "card": "data-quality",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-028",
     "text": "You will be asked to make a chart 'pop.' The chart cannot pop. But you will try.",
-    "card": "the-executive-dashboard"
+    "card": "the-executive-dashboard",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-029",
     "text": "Today's Jira ticket will spawn three child tickets. The wheel turns.",
-    "card": "the-wheel-of-jira"
+    "card": "the-wheel-of-jira",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-030",
     "text": "A null where you expected a value. A value where you expected a null. Balance.",
-    "card": "schema-changes"
+    "card": "schema-changes",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-031",
     "text": "The VPN will hold steady through your entire demo. A rare blessing.",
-    "card": "the-remote-dev"
+    "card": "the-remote-dev",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-032",
     "text": "You will find a comment in the code that simply reads 'TODO: fix this.' It is from you.",
-    "card": "the-architect"
+    "card": "the-architect",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-033",
     "text": "The stakeholder will change requirements mid-sprint. The cards foresaw this.",
-    "card": "the-stakeholder"
+    "card": "the-stakeholder",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-034",
     "text": "A production incident will resolve itself before you finish writing the postmortem.",
-    "card": "the-outage"
+    "card": "the-outage",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-035",
     "text": "Your carefully indexed table will be queried with SELECT *. Let it go.",
-    "card": "the-data-steward"
+    "card": "the-data-steward",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-036",
     "text": "Your support ticket will be answered by a bot that has never felt pain.",
-    "card": "the-vendor"
+    "card": "the-vendor",
+    "added": "2026-01-01"
   },
   {
     "id": "fortune-037",
     "text": "The go-live checklist has one unchecked box. Nobody remembers what it was for.",
-    "card": "the-go-live"
+    "card": "the-go-live",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-038",
     "text": "The data is correct. The expectation is not.",
-    "card": "the-executive-dashboard"
+    "card": "the-executive-dashboard",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-039",
     "text": "If it hasn't hit the backlog, its folklore.",
-    "card": "the-vendor"
+    "card": "the-vendor",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-040",
     "text": "Your numbers are right. Someone else's aren't.",
-    "card": "the-end-user"
+    "card": "the-end-user",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-041",
     "text": "They want it exactly the same. But different.",
-    "card": "the-vendor"
+    "card": "the-vendor",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-042",
     "text": "The end goal was clear. To everyone except everyone.",
-    "card": "the-sprint"
+    "card": "the-sprint",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-043",
     "text": "We've always used this report. Why? Because our great ancestors did.d",
-    "card": "the-end-user"
+    "card": "the-end-user",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-044",
     "text": "The requirement is final. Pending one more change.",
-    "card": "the-end-user"
+    "card": "the-end-user",
+    "added": "2026-04-22"
   },
   {
     "id": "fortune-045",
     "text": "That's a great idea for a future sprint.",
-    "card": "the-wheel-of-jira"
+    "card": "the-wheel-of-jira",
+    "added": "2026-04-22"
   }
 ]

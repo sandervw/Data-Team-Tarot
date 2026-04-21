@@ -17,7 +17,8 @@ const fortunes = defineCollection({
   loader: file("src/content/fortunes.json"),
   schema: z.object({
     text: z.string(),
-    card: z.string().optional() //slug reference
+    card: z.string().optional(), //slug reference
+    added: z.string()
   })
 });
 
