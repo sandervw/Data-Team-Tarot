@@ -198,5 +198,10 @@
     "id": "fortune-040",
     "text": "Your numbers are right. Someone else's aren't.",
     "card": "the-end-user"
+  },
+  {
+    "id": "fortune-041",
+    "text": "They want it exactly the same. But different.",
+    "card": "the-vendor"
   }
 ]
