@@ -11,6 +11,7 @@ interface TarotCard {
 interface Fortune {
   readonly text: string;
   readonly card?: string;
+  readonly added: string;
 }
 
 interface DailyDrawProps {
@@ -19,8 +20,7 @@ interface DailyDrawProps {
 }
 
 const DailyDraw = ({ cards, fortunes }: DailyDrawProps): React.JSX.Element => {
-  const { fortuneIndex } = getDailyDraw(fortunes.length, new Date());
-  const fortune = fortunes[fortuneIndex];
+  const fortune = getDailyDraw(fortunes, new Date());
   const cardIndex = fortune.card
     ? cards.findIndex((c) => c.id === fortune.card)
     : Math.floor(Math.random() * cards.length);

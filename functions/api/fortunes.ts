@@ -13,6 +13,7 @@ interface FortuneEntry {
   readonly id: string;
   readonly text: string;
   readonly card: string;
+  readonly added: string;
 }
 
 interface CardEntry {
@@ -139,9 +140,10 @@ const submitFortune = async (
 
   for (let attempt = 0; attempt < MAX_RETRIES; attempt += 1) {
     const id = nextId(currentFortunes);
+    const added = new Date().toISOString().slice(0, 10);
     const updated: readonly FortuneEntry[] = [
       ...currentFortunes,
-      { id, text, card },
+      { id, text, card, added },
     ];
     const body = `${JSON.stringify(updated, null, 2)}\n`;
     const res = await putFile(

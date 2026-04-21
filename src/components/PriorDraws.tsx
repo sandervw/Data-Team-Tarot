@@ -12,6 +12,7 @@ interface TarotCard {
 interface Fortune {
   readonly text: string;
   readonly card?: string;
+  readonly added: string;
 }
 
 interface PriorDrawsProps {
@@ -25,8 +26,7 @@ const PriorDraws = ({
 }: PriorDrawsProps): React.JSX.Element => {
   const priorDrawDates = getPreviousDrawDates(9, new Date());
   const priorDraws = priorDrawDates.map((date) => {
-    const { fortuneIndex } = getDailyDraw(fortunes.length, date);
-    const fortune = fortunes[fortuneIndex];
+    const fortune = getDailyDraw(fortunes, date);
     const cardIndex = fortune.card
       ? cards.findIndex((c) => c.id === fortune.card)
       : Math.floor(Math.random() * cards.length);

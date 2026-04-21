@@ -1,5 +1,5 @@
-interface DailyDraw {
-  readonly fortuneIndex: number;
+interface Dated {
+  readonly added: string;
 }
 
 const hashDateString = (date: string, offset: number = 0): number => {
@@ -29,15 +29,16 @@ const getAdjustedDate = (date: Readonly<Date>): Date => {
   return adjusted;
 };
 
-const getDailyDraw = (
-  totalFortunes: number,
+const getDailyDraw = <T extends Dated>(
+  fortunes: readonly T[],
   date: Readonly<Date>,
-): DailyDraw => {
+): T => {
   const adjustedDate = getAdjustedDate(date);
-  const dateKey = adjustedDate.toDateString();
-  const hash = hashDateString(dateKey, 1);
-  const fortuneIndex = Math.abs(hash) % totalFortunes;
-  return { fortuneIndex };
+  const drawKey = adjustedDate.toISOString().slice(0, 10);
+  const pool = fortunes.filter((f) => f.added <= drawKey);
+  const hash = hashDateString(adjustedDate.toDateString(), 1);
+  const fortuneIndex = Math.abs(hash) % pool.length;
+  return pool[fortuneIndex]!;
 };
 
 // function to get previous 9 monday, wednesday, friday dates for cemetery page (excluding most recent day)
