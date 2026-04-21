@@ -183,5 +183,10 @@
     "id": "fortune-037",
     "text": "The go-live checklist has one unchecked box. Nobody remembers what it was for.",
     "card": "the-go-live"
+  },
+  {
+    "id": "fortune-038",
+    "text": "The data is correct. The expectation is not.",
+    "card": "the-executive-dashboard"
   }
 ]
