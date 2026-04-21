@@ -193,5 +193,10 @@
     "id": "fortune-039",
     "text": "If it hasn't hit the backlog, its folklore.",
     "card": "the-vendor"
+  },
+  {
+    "id": "fortune-040",
+    "text": "Your numbers are right. Someone else's aren't.",
+    "card": "the-end-user"
   }
 ]
