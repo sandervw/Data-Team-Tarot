@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Data Team Tarot - a daily standup fortune predictor built with Astro 6 (SSG). One tarot card drawn per day (deterministic, same for everyone), with a data-team-themed Major Arcana deck. It is deployed to Cloudflare Pages (https://cheddarsoap.com/).
+Data Team Tarot - a standup fortune predictor built with Astro 6 (SSG) plus a React island for the draw UI. A deterministic tarot card is drawn for the team three times a week (Mon/Wed/Fri), using a data-team-themed Major Arcana deck. Tue/Thu draws collapse onto Mon/Wed; Sat/Sun collapse onto Fri, so the draw only changes three times a week.
+
+Deployed to Cloudflare Pages at https://cheddarsoap.com/. Submissions flow through a Cloudflare Pages Function that commits new fortunes to this GitHub repo via the GitHub Contents API, which triggers the next build.
 
 ## Astro Docs
 
@@ -16,7 +18,7 @@ Before writing or editing any `.astro` files, Astro config, or Astro-related cod
 - `npm run build` - production build
 - `npm run preview` - preview production build
 
-No test runner or linter is configured yet.
+No test runner or linter is configured.
 
 ## Code Standards ("Sparse" Rules)
 
@@ -50,12 +52,27 @@ This project follows a custom constraint system called "Sparse", defined in `pub
 
 ## Architecture
 
-- **Astro 6 SSG** - no SSR, fully static site generation
-- `src/pages/index.astro` - homepage (will become daily draw page)
+**Rendering**
+- Astro 6 SSG (`output: 'static'` in `astro.config.mjs`) with `@astrojs/react` for client islands
+- `src/pages/` - `index.astro` (daily draw), `deck.astro`, `cemetery.astro` (prior draws), `submit.astro`
 - `src/layouts/BaseLayout.astro` - base HTML shell
-- `src/content/Cards.md` - card list for the 22 Major Arcana (data-team themed)
+- `src/components/` - `DailyDraw.tsx`, `Card.tsx`, `PriorDraws.tsx`, `SubmissionForm.tsx` (React), `Nav.astro`
+- `src/utils/dailyDraw.ts` - deterministic hash-based draw + Mon/Wed/Fri date collapsing
 - `src/styles/sparse.css` - core utility-first CSS framework following Sparse rules
-- `src/styles/classic.css` - layout layer (navbar, sidebar, page, footer, drawer) on top of sparse.css
+- `src/styles/tarot.css` - layout layer (navbar, page, card styling) on top of sparse.css
+
+**Content**
+- Astro content collections defined in `src/content.config.ts` using the `file` loader
+- `src/content/cards.json` - the 22 Major Arcana (data-team themed), schema: `{ name, numeral, number, art, suit? }`
+- `src/content/fortunes.json` - submitted fortunes, schema: `{ text, card?, added }`
+- Cards are JSON entries, not markdown
+
+**Cloudflare Pages Functions (`functions/`)**
+- `functions/_middleware.ts` - site-wide HMAC-cookie password gate (env: `SITE_PASSWORD`, `COOKIE_SECRET`). Serves a login page at `/__login` and sets a signed session cookie (`dtt_session`, 30 days).
+- `functions/api/fortunes.ts` - `POST /api/fortunes` endpoint. Validates payload, fetches `src/content/fortunes.json` from GitHub, appends a new `fortune-NNN` entry with today's date, and commits via the GitHub Contents API. Retries on 409/422. Env: `GITHUB_TOKEN`, `GITHUB_REPO`, `GITHUB_BRANCH` (defaults to `main`).
+- The commit triggers a fresh Cloudflare Pages build, which picks up the new fortune at SSG time.
+
+**Standards**
 - `public/standards/` - Sparse coding standard definitions (CSS, TS, React)
 
 Dark theme by default: off-white text (`#faf9f5`) on near-black background (`#262624`) with copper accent (`#b87333`).
