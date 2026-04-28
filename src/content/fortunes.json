@@ -268,5 +268,11 @@
     "text": "That's a great idea for a future sprint.",
     "card": "the-wheel-of-jira",
     "added": "2026-04-22"
+  },
+  {
+    "id": "fortune-046",
+    "text": "A foreign key will be missing. The relationship was, in hindsight, casual.",
+    "card": "schema-changes",
+    "added": "2026-04-28"
   }
 ]
