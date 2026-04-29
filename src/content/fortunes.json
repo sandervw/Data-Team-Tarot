@@ -274,5 +274,11 @@
     "text": "A foreign key will be missing. The relationship was, in hindsight, casual.",
     "card": "schema-changes",
     "added": "2026-04-28"
+  },
+  {
+    "id": "fortune-047",
+    "text": "You will know the problem is resolved when the user suddenly never replies to you again - keep onward",
+    "card": "data-quality",
+    "added": "2026-04-29"
   }
 ]
