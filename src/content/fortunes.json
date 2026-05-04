@@ -292,5 +292,11 @@
     "text": "A stakeholder will say ‘quick question’ and actually mean it.",
     "card": "the-stakeholder",
     "added": "2026-05-04"
+  },
+  {
+    "id": "fortune-050",
+    "text": "Progress has been made, even if it doesn't feel like it.",
+    "card": "the-cross-team-dependency",
+    "added": "2026-05-04"
   }
 ]
