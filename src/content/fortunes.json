@@ -304,5 +304,11 @@
     "text": "Your story is almost done. Almost counts in testing.",
     "card": "the-sprint",
     "added": "2026-05-04"
+  },
+  {
+    "id": "fortune-052",
+    "text": "You are solving harder problems than you think.",
+    "card": "the-cross-team-dependency",
+    "added": "2026-05-04"
   }
 ]
