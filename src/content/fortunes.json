@@ -310,5 +310,11 @@
     "text": "You are solving harder problems than you think.",
     "card": "the-cross-team-dependency",
     "added": "2026-05-04"
+  },
+  {
+    "id": "fortune-053",
+    "text": "The work you do makes invisible things reliable.",
+    "card": "the-sprint",
+    "added": "2026-05-04"
   }
 ]
