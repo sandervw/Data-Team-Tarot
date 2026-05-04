@@ -322,5 +322,11 @@
     "text": "Not all progress is measurable, but today counts.",
     "card": "the-sprint",
     "added": "2026-05-04"
+  },
+  {
+    "id": "fortune-055",
+    "text": "You will help someone without realizing it.",
+    "card": "the-cross-team-dependency",
+    "added": "2026-05-04"
   }
 ]
