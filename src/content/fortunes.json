@@ -328,5 +328,11 @@
     "text": "You will help someone without realizing it.",
     "card": "the-cross-team-dependency",
     "added": "2026-05-04"
+  },
+  {
+    "id": "fortune-056",
+    "text": "Something you built quietly works every day.",
+    "card": "code-review",
+    "added": "2026-05-04"
   }
 ]
