@@ -298,5 +298,11 @@
     "text": "Progress has been made, even if it doesn't feel like it.",
     "card": "the-cross-team-dependency",
     "added": "2026-05-04"
+  },
+  {
+    "id": "fortune-051",
+    "text": "Your story is almost done. Almost counts in testing.",
+    "card": "the-sprint",
+    "added": "2026-05-04"
   }
 ]
