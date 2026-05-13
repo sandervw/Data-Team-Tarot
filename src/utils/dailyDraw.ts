@@ -39,7 +39,9 @@ const getDailyDraw = <T extends Dated>(
   // TEMP: force fortune-053 on 2026-05-13 only. Remove after that date.
   if (drawKey === "2026-05-13") {
     const forced = fortunes.find(
-      (f) => (f as T & { id?: string }).id === "fortune-053",
+      (f) =>
+        (f as T & { text?: string }).text ===
+        "The work you do makes invisible things reliable.",
     );
     if (forced) return forced;
   }
