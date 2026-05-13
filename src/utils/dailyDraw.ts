@@ -35,6 +35,15 @@ const getDailyDraw = <T extends Dated>(
 ): T => {
   const adjustedDate = getAdjustedDate(date);
   const drawKey = adjustedDate.toISOString().slice(0, 10);
+
+  // TEMP: force fortune-053 on 2026-05-13 only. Remove after that date.
+  if (drawKey === "2026-05-13") {
+    const forced = fortunes.find(
+      (f) => (f as T & { id?: string }).id === "fortune-053",
+    );
+    if (forced) return forced;
+  }
+
   const pool = fortunes.filter((f) => f.added <= drawKey);
   const hash = hashDateString(adjustedDate.toDateString(), 1);
   const fortuneIndex = Math.abs(hash) % pool.length;
