@@ -92,11 +92,20 @@ select {
 .tarot-button,
 .tarot-button-selected {
   cursor: pointer;
-  border-color: var(--color-gray);
   transition: var(--transition-fast);
+  background-color: transparent;
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+.tarot-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 .tarot-button:hover {
   border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 .tarot-button-selected {
   border-color: var(--color-accent);
@@ -136,6 +145,29 @@ select {
   border-radius: var(--medium);
   padding: var(--xlarge);
   margin-top: var(--small);
+}
+
+/*============================================
+  TAROT FLIP: 3D reveal animation
+  ============================================*/
+.tarot-flip {
+  perspective: 1000px;
+  width: fit-content;
+}
+.tarot-flip-inner {
+  display: grid;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.tarot-flip-inner > .tarot-flip-face {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+}
+.tarot-flip-inner > .tarot-flip-back {
+  transform: rotateY(180deg);
+}
+.tarot-flip.flipped .tarot-flip-inner {
+  transform: rotateY(180deg);
 }
 
 /*============================================
