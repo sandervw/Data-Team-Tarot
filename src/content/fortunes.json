@@ -334,5 +334,11 @@
     "text": "Something you built quietly works every day.",
     "card": "code-review",
     "added": "2026-05-04"
+  },
+  {
+    "id": "fortune-057",
+    "text": "You will be plagued by permission issues. That is all.",
+    "card": "the-outage",
+    "added": "2026-06-11"
   }
 ]
