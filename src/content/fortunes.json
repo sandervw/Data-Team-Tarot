@@ -340,5 +340,11 @@
     "text": "You will be plagued by permission issues. That is all.",
     "card": "the-outage",
     "added": "2026-06-11"
+  },
+  {
+    "id": "fortune-058",
+    "text": "Cassie misses you all. #DataTeam4ever :)",
+    "card": "the-cross-team-dependency",
+    "added": "2026-07-06"
   }
 ]
