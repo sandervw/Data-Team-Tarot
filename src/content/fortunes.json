@@ -424,5 +424,11 @@
     "text": "You will spend longer working with the requestor on naming the report than building the report.",
     "card": "the-end-user",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-072",
+    "text": "Someone will ask for \"all the data.\"",
+    "card": "the-end-user",
+    "added": "2026-07-06"
   }
 ]
