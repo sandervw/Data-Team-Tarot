@@ -406,5 +406,11 @@
     "text": "Someone will discover a requirement after development begins.",
     "card": "the-architect",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-069",
+    "text": "An \"easy enhancement\" approaches from the east.",
+    "card": "the-end-user",
+    "added": "2026-07-06"
   }
 ]
