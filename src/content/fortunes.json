@@ -352,5 +352,11 @@
     "text": "Today's mysterious data issue will resolve itself immediately after someone says, \"Let me show you what's happening.\"",
     "card": "the-end-user",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-060",
+    "text": "A stakeholder will arrive with acceptance criteria. Appreciate this rare celestial event.",
+    "card": "the-data-steward",
+    "added": "2026-07-06"
   }
 ]
