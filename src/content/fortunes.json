@@ -394,5 +394,11 @@
     "text": "You will discover that two teams have different definitions of the same field.",
     "card": "the-end-user",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-067",
+    "text": "The backlog grows. The backlog shrinks. The backlog remains.",
+    "card": "the-sprint",
+    "added": "2026-07-06"
   }
 ]
