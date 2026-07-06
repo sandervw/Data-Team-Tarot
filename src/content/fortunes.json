@@ -442,5 +442,11 @@
     "text": "A user will identify a defect using the phrase, \"Something feels off.\"",
     "card": "the-stakeholder",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-075",
+    "text": "The Data Team cannot solve every problem, but somehow it keeps getting invited to try.",
+    "card": "the-outage",
+    "added": "2026-07-06"
   }
 ]
