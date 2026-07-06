@@ -454,5 +454,11 @@
     "text": "Congratulations! You have been selected as the subject matter expert for a process you learned about this morning.",
     "card": "the-architect",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-077",
+    "text": "A stakeholder will say, \"I have a quick question,\" and you'll make a fresh pot of coffee.",
+    "card": "schema-changes",
+    "added": "2026-07-06"
   }
 ]
