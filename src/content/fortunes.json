@@ -448,5 +448,11 @@
     "text": "The Data Team cannot solve every problem, but somehow it keeps getting invited to try.",
     "card": "the-outage",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-076",
+    "text": "Congratulations! You have been selected as the subject matter expert for a process you learned about this morning.",
+    "card": "the-architect",
+    "added": "2026-07-06"
   }
 ]
