@@ -400,5 +400,11 @@
     "text": "The backlog grows. The backlog shrinks. The backlog remains.",
     "card": "the-sprint",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-068",
+    "text": "Someone will discover a requirement after development begins.",
+    "card": "the-architect",
+    "added": "2026-07-06"
   }
 ]
