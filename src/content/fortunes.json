@@ -436,5 +436,11 @@
     "text": "Every team has challenges. Good teams talk about them.",
     "card": "the-sprint",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-074",
+    "text": "A user will identify a defect using the phrase, \"Something feels off.\"",
+    "card": "the-stakeholder",
+    "added": "2026-07-06"
   }
 ]
