@@ -430,5 +430,11 @@
     "text": "Someone will ask for \"all the data.\"",
     "card": "the-end-user",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-073",
+    "text": "Every team has challenges. Good teams talk about them.",
+    "card": "the-sprint",
+    "added": "2026-07-06"
   }
 ]
