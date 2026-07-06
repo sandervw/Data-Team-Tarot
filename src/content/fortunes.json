@@ -370,5 +370,11 @@
     "text": "The business will provide both the source and the desired output.",
     "card": "the-data-steward",
     "added": "2026-07-06"
+  },
+  {
+    "id": "fortune-063",
+    "text": "A Power BI dashboard somewhere is making someone's job easier because of your work.",
+    "card": "the-end-user",
+    "added": "2026-07-06"
   }
 ]
